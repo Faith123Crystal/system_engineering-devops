@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script that displays the result of BREATH raised to the power of LOVE
+
+echo $((BREATH ** LOVE))
