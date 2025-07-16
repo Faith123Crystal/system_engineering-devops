@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script that prints the result of adding 128 to the TRUEKNOWLEDGE environment variable
+
+echo $((TRUEKNOWLEDGE + 128))
