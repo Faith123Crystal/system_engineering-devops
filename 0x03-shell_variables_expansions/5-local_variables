@@ -1,0 +1,8 @@
+#!/bin/bash
+# Script to list all local variables, environment variables, and shell functions
+
+# The 'set' command without any options displays:
+# - All shell variables (both local and environment variables)
+# - All shell functions
+# - All shell options that are set
+set
