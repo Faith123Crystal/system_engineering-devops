@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script loops from 1 to 10, displaying specific messages for 4 and 8, and "Best School" otherwise.
+
+COUNT=1
+while [ "$COUNT" -le 10 ]; do
+  if [ "$COUNT" -eq 4 ]; then
+    echo "bad luck"
+  elif [ "$COUNT" -eq 8 ]; then
+    echo "good luck"
+  else
+    echo "Best School"
+  fi
+  COUNT=$((COUNT + 1))
+done
