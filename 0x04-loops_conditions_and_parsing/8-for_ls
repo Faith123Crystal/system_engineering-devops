@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script lists non-hidden regular files in the current directory, displaying only the part of the name after the first dash.
+
+# Iterate over all non-hidden items (files and directories) in the current directory.
+# The '*' wildcard automatically excludes files starting with '.'.
+for item in *; do
+  # Check if the current 'item' is a regular file (-f).
+  # This ensures we process only files and skip directories or other special file types.
+  if [ -f "$item" ]; then
+    # Use Bash parameter expansion to remove the shortest match of '*-' from the beginning.
+    # If an item name does not contain a dash, the entire name is kept.
+    printf "%s\n" "${item#*-}"
+  fi
+done
